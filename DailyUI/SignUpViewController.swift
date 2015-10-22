@@ -34,7 +34,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        animateComplete()
+        completeLineView.transform = CGAffineTransformMakeTranslation(-300, 0)
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -54,9 +54,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
         var startxpos = CGFloat(-300)
         var endxpos = CGFloat(0)
-        completeOut = false
-        if allTextTheir() {
-            completeOut = true
+        completeOut = true
+        if !allTextTheir() {
+            completeOut = false
             startxpos = CGFloat(0)
             endxpos = CGFloat(-300)
         }
