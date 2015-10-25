@@ -50,6 +50,8 @@ class ListTableViewController: UITableViewController {
         
         cell.titleLabel.text = daily["title"]
         cell.iconImageView.image = UIImage(named: daily["icon"]!)
+        cell.iconImageView.layer.cornerRadius = 4
+        cell.iconImageView.clipsToBounds = true
 
         return cell
     }

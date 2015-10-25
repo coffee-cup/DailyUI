@@ -35,6 +35,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         super.viewDidAppear(animated)
         
         completeLineView.transform = CGAffineTransformMakeTranslation(-300, 0)
+        completeOut = false
     }
     
     override func prefersStatusBarHidden() -> Bool {

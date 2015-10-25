@@ -13,5 +13,11 @@ let list = [
         "title" : "Sign Up",
         "icon" : "signup.png",
         "segue": "SignUpSegue"
+    ],
+    
+    [
+        "title": "Credit Card",
+        "icon": "creditcard.png",
+        "segue": "CreditCardSegue"
     ]
 ]
