@@ -5,7 +5,7 @@ I make the designs in sketch and implement them with animations in Xcode.
 Feel free to download to run the app or view and edit the source.
 
 ## Screenshots of days
-**newest first**
+*newest first*
 
 ### 002 Credit Card Checkout
 
