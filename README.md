@@ -9,8 +9,8 @@ Feel free to download to run the app or view and edit the source.
 
 ### 002 Credit Card Checkout
 
-![credit card checkout](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/CreditCard.png)
+![credit card checkout](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/CreditCard.gif)
 
 ### 001 Sign Up
 
-![sign up](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/SignUp.png)
+![sign up](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/SignUp.gif)
