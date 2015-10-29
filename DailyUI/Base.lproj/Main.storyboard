@@ -21,6 +21,27 @@
             <string>PlayfairDisplay-Regular</string>
             <string>PlayfairDisplay-Regular</string>
         </mutableArray>
+        <mutableArray key="UbuntuMono-R.ttf">
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+            <string>UbuntuMono-Regular</string>
+        </mutableArray>
     </customFonts>
     <scenes>
         <!--DailyUI-->
@@ -81,6 +102,8 @@
                     <connections>
                         <segue destination="8vQ-ds-n0Q" kind="presentation" identifier="SignUpSegue" id="X9y-wp-hO2"/>
                         <segue destination="C7g-gX-Ysc" kind="presentation" identifier="CreditCardSegue" id="vVm-yh-uqz"/>
+                        <segue destination="gHE-Fc-sfZ" kind="presentation" identifier="LandingPageSegue" id="VqR-eQ-kqH"/>
+                        <segue destination="M0V-4N-bzN" kind="presentation" identifier="CalculatorSegue" id="QBa-AN-ENn"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSU-Pa-shT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -990,7 +1013,581 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQb-JU-jay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="955"/>
+            <point key="canvasLocation" x="860" y="955"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="exa-mw-V94">
+            <objects>
+                <viewController id="gHE-Fc-sfZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="coM-8I-qBH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Evv-kV-9Wd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IpY-Og-x60">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zoJ-At-8DJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="955"/>
+        </scene>
+        <!--Calculator View Controller-->
+        <scene sceneID="VuL-gb-z3a">
+            <objects>
+                <viewController id="M0V-4N-bzN" customClass="CalculatorViewController" customModule="DailyUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="moc-Be-Zrh"/>
+                        <viewControllerLayoutGuide type="bottom" id="d73-wy-qpL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sDY-in-mJo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TW1-6b-lM2">
+                                <rect key="frame" x="0.0" y="573" width="188" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TW1-6b-lM2" secondAttribute="height" multiplier="2:1" id="RcO-Sz-kNJ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
+                                <state key="normal" image="delete">
+                                    <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="FBn-cX-86t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KZ-JS-Lff">
+                                <rect key="frame" x="0.0" y="479" width="188" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1KZ-JS-Lff" secondAttribute="height" multiplier="2:1" id="MH3-fd-yh7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MH3-fd-yh7"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="bej-r2-r4m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSI-rX-8Xc">
+                                <rect key="frame" x="0.0" y="385" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GSI-rX-8Xc" secondAttribute="height" multiplier="2:1" id="7TG-TF-09F"/>
+                                    <constraint firstAttribute="width" secondItem="GSI-rX-8Xc" secondAttribute="height" multiplier="1:1" id="DRr-gN-b7c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7TG-TF-09F"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="de3-ud-lPr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcr-5c-Knp">
+                                <rect key="frame" x="281" y="479" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.50196078431372548" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fcr-5c-Knp" secondAttribute="height" multiplier="2:1" id="IF2-YZ-2wO"/>
+                                    <constraint firstAttribute="width" secondItem="fcr-5c-Knp" secondAttribute="height" multiplier="1:1" id="y3g-7q-tob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IF2-YZ-2wO"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="FIe-dH-zfd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-cf-fmM">
+                                <rect key="frame" x="281" y="385" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.89803921568627454" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3gm-cf-fmM" secondAttribute="height" multiplier="2:1" id="Dw0-i4-Pnm"/>
+                                    <constraint firstAttribute="width" secondItem="3gm-cf-fmM" secondAttribute="height" multiplier="1:1" id="a2s-Gx-t1m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Dw0-i4-Pnm"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="ftI-bT-8fj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-OZ-BP6">
+                                <rect key="frame" x="281" y="291" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.61960784313725492" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MxH-OZ-BP6" secondAttribute="height" multiplier="2:1" id="P28-CD-aSB"/>
+                                    <constraint firstAttribute="width" secondItem="MxH-OZ-BP6" secondAttribute="height" multiplier="1:1" id="qGt-mc-86I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="x">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="P28-CD-aSB"/>
+                                        <exclude reference="qGt-mc-86I"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="chG-b6-gJ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtw-Ly-Ie7">
+                                <rect key="frame" x="281" y="197" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.50196078431372548" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gtw-Ly-Ie7" secondAttribute="height" multiplier="1:1" id="BAB-Og-WDX"/>
+                                    <constraint firstAttribute="width" secondItem="gtw-Ly-Ie7" secondAttribute="height" multiplier="2:1" id="fb1-aT-D2w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="40"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BAB-Og-WDX"/>
+                                        <exclude reference="fb1-aT-D2w"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="Yfw-P0-giH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWO-aI-CiG">
+                                <rect key="frame" x="0.0" y="291" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jWO-aI-CiG" secondAttribute="height" multiplier="2:1" id="96M-b4-3HD"/>
+                                    <constraint firstAttribute="width" secondItem="jWO-aI-CiG" secondAttribute="height" multiplier="1:1" id="rzE-AT-vbQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="96M-b4-3HD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="nW4-g3-ni0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1At-OO-0Mu">
+                                <rect key="frame" x="0.0" y="197" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1At-OO-0Mu" secondAttribute="height" multiplier="1:1" id="MK8-W3-m0U"/>
+                                    <constraint firstAttribute="width" secondItem="1At-OO-0Mu" secondAttribute="height" multiplier="2:1" id="aVA-1E-V52"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aVA-1E-V52"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="KD6-38-ngu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jo-8U-V04">
+                                <rect key="frame" x="187" y="479" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Jo-8U-V04" secondAttribute="height" multiplier="2:1" id="4qE-0c-MiM"/>
+                                    <constraint firstAttribute="width" secondItem="7Jo-8U-V04" secondAttribute="height" multiplier="1:1" id="vLW-2c-LuJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4qE-0c-MiM"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="dotButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="Bn0-8F-FEU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKF-gR-vTv">
+                                <rect key="frame" x="187" y="385" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iKF-gR-vTv" secondAttribute="height" multiplier="2:1" id="fk1-p1-iUq"/>
+                                    <constraint firstAttribute="width" secondItem="iKF-gR-vTv" secondAttribute="height" multiplier="1:1" id="qCC-I2-35m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fk1-p1-iUq"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="PgA-0t-Q0Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIV-vw-q88">
+                                <rect key="frame" x="187" y="291" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HIV-vw-q88" secondAttribute="height" multiplier="2:1" id="9lm-A4-ZKU"/>
+                                    <constraint firstAttribute="width" secondItem="HIV-vw-q88" secondAttribute="height" multiplier="1:1" id="hYc-9v-XnX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9lm-A4-ZKU"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="JDU-Tf-XJW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vS-Gs-HmY">
+                                <rect key="frame" x="187" y="197" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9vS-Gs-HmY" secondAttribute="height" multiplier="2:1" id="dsB-HP-OPE"/>
+                                    <constraint firstAttribute="width" secondItem="9vS-Gs-HmY" secondAttribute="height" multiplier="1:1" id="lnp-hp-AA4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dsB-HP-OPE"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="nqC-9F-hJR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejq-xS-9VH">
+                                <rect key="frame" x="94" y="385" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ejq-xS-9VH" secondAttribute="height" multiplier="2:1" id="SFu-Fo-K9G"/>
+                                    <constraint firstAttribute="width" secondItem="Ejq-xS-9VH" secondAttribute="height" multiplier="1:1" id="buk-Go-bw8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SFu-Fo-K9G"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="OfX-ij-lGc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-oj-9JW">
+                                <rect key="frame" x="187" y="573" width="188" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.52941176469999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CHb-oj-9JW" secondAttribute="height" multiplier="2:1" id="kQc-Bv-e4R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="60"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="Pe1-rF-0Yz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFB-9k-eUi">
+                                <rect key="frame" x="94" y="291" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DFB-9k-eUi" secondAttribute="height" multiplier="1:1" id="4zm-Rv-hC3"/>
+                                    <constraint firstAttribute="width" secondItem="DFB-9k-eUi" secondAttribute="height" multiplier="2:1" id="nPJ-Nk-8GW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nPJ-Nk-8GW"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="Tgo-eZ-Nv7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mya-1y-gAV">
+                                <rect key="frame" x="94" y="197" width="94" height="94"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mya-1y-gAV" secondAttribute="height" multiplier="1:1" id="aot-iQ-T3p"/>
+                                    <constraint firstAttribute="width" secondItem="mya-1y-gAV" secondAttribute="height" multiplier="2:1" id="yb9-lo-NnN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="yb9-lo-NnN"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="ntF-Fo-xuN"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70K-1h-Wj4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="197"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4d-r0-jxR">
+                                        <rect key="frame" x="0.0" y="103" width="94" height="94"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="i4d-r0-jxR" secondAttribute="height" multiplier="1:1" id="R2f-5G-GTa"/>
+                                            <constraint firstAttribute="width" secondItem="i4d-r0-jxR" secondAttribute="height" multiplier="2:1" id="vEQ-Pg-mJD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
+                                        <state key="normal" title="C">
+                                            <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="vEQ-Pg-mJD"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="clearButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="EpN-wK-5Kh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="i4y-Ez-KNl">
+                                        <rect key="frame" x="102" y="103" width="265" height="82"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="70"/>
+                                        <color key="textColor" red="0.22352941330000001" green="0.22352941330000001" blue="0.22352941330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2+2 &gt; 4x6 &gt; 24-24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIC-SV-8Co">
+                                        <rect key="frame" x="10" y="8" width="199" height="28"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="24"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.52941176470588236" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="i4y-Ez-KNl" firstAttribute="leading" secondItem="i4d-r0-jxR" secondAttribute="trailing" constant="8" id="HJk-a7-Ovh"/>
+                                    <constraint firstAttribute="trailing" secondItem="i4y-Ez-KNl" secondAttribute="trailing" constant="8" id="Mk7-Vr-b5m"/>
+                                    <constraint firstItem="wIC-SV-8Co" firstAttribute="top" secondItem="70K-1h-Wj4" secondAttribute="top" constant="8" id="P7e-Ag-H7t"/>
+                                    <constraint firstItem="i4y-Ez-KNl" firstAttribute="top" secondItem="i4d-r0-jxR" secondAttribute="top" id="af7-bR-b8D"/>
+                                    <constraint firstAttribute="bottom" secondItem="i4d-r0-jxR" secondAttribute="bottom" id="gsa-uu-xqI"/>
+                                    <constraint firstItem="i4d-r0-jxR" firstAttribute="leading" secondItem="70K-1h-Wj4" secondAttribute="leading" id="lSf-cY-J9t"/>
+                                    <constraint firstItem="wIC-SV-8Co" firstAttribute="leading" secondItem="70K-1h-Wj4" secondAttribute="leading" constant="10" id="qMt-f1-jCM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iKF-gR-vTv" firstAttribute="width" secondItem="iKF-gR-vTv" secondAttribute="height" multiplier="1:1" id="0aB-3K-whS"/>
+                            <constraint firstItem="MxH-OZ-BP6" firstAttribute="width" secondItem="3gm-cf-fmM" secondAttribute="width" id="1Xb-jO-197"/>
+                            <constraint firstItem="CHb-oj-9JW" firstAttribute="width" secondItem="TW1-6b-lM2" secondAttribute="width" id="1Y4-fo-Zcy"/>
+                            <constraint firstItem="MxH-OZ-BP6" firstAttribute="width" secondItem="3gm-cf-fmM" secondAttribute="width" id="2p5-ES-GfZ"/>
+                            <constraint firstItem="mya-1y-gAV" firstAttribute="width" secondItem="mya-1y-gAV" secondAttribute="height" multiplier="1:1" id="5Jn-Dj-D2c"/>
+                            <constraint firstItem="7Jo-8U-V04" firstAttribute="width" secondItem="fcr-5c-Knp" secondAttribute="width" id="6uy-xB-yWf"/>
+                            <constraint firstItem="jWO-aI-CiG" firstAttribute="width" secondItem="GSI-rX-8Xc" secondAttribute="width" id="7Rd-Eh-fUF"/>
+                            <constraint firstItem="MxH-OZ-BP6" firstAttribute="top" secondItem="gtw-Ly-Ie7" secondAttribute="bottom" id="8Mj-xT-SVJ"/>
+                            <constraint firstItem="9vS-Gs-HmY" firstAttribute="width" secondItem="9vS-Gs-HmY" secondAttribute="height" multiplier="1:1" id="8Vd-C5-OPj"/>
+                            <constraint firstItem="70K-1h-Wj4" firstAttribute="top" secondItem="sDY-in-mJo" secondAttribute="top" id="9Pk-dJ-Lg8"/>
+                            <constraint firstItem="DFB-9k-eUi" firstAttribute="width" secondItem="DFB-9k-eUi" secondAttribute="height" multiplier="1:1" id="9Px-rg-loj"/>
+                            <constraint firstItem="GSI-rX-8Xc" firstAttribute="top" secondItem="jWO-aI-CiG" secondAttribute="bottom" id="A6v-qV-x3I"/>
+                            <constraint firstItem="1KZ-JS-Lff" firstAttribute="width" secondItem="TW1-6b-lM2" secondAttribute="width" id="AmP-Ix-Cw6"/>
+                            <constraint firstItem="d73-wy-qpL" firstAttribute="top" secondItem="TW1-6b-lM2" secondAttribute="bottom" id="Au3-Ug-2rC"/>
+                            <constraint firstItem="mya-1y-gAV" firstAttribute="top" secondItem="70K-1h-Wj4" secondAttribute="bottom" id="Aw4-lE-OLS"/>
+                            <constraint firstAttribute="trailing" secondItem="70K-1h-Wj4" secondAttribute="trailing" id="BPS-8s-ee9"/>
+                            <constraint firstAttribute="trailing" secondItem="3gm-cf-fmM" secondAttribute="trailing" id="BiX-Eg-bBs"/>
+                            <constraint firstItem="MxH-OZ-BP6" firstAttribute="width" secondItem="MxH-OZ-BP6" secondAttribute="height" multiplier="1:1" id="CIe-Sz-yg3"/>
+                            <constraint firstItem="3gm-cf-fmM" firstAttribute="width" secondItem="fcr-5c-Knp" secondAttribute="width" id="CS1-nI-iQ1"/>
+                            <constraint firstItem="TW1-6b-lM2" firstAttribute="leading" secondItem="sDY-in-mJo" secondAttribute="leading" id="Clr-qQ-edQ"/>
+                            <constraint firstItem="1At-OO-0Mu" firstAttribute="width" secondItem="jWO-aI-CiG" secondAttribute="width" id="D3J-eZ-F8U"/>
+                            <constraint firstItem="1KZ-JS-Lff" firstAttribute="leading" secondItem="sDY-in-mJo" secondAttribute="leading" id="E5A-BV-Jfw"/>
+                            <constraint firstItem="CHb-oj-9JW" firstAttribute="top" secondItem="7Jo-8U-V04" secondAttribute="bottom" id="HX2-1G-Zyf"/>
+                            <constraint firstItem="iKF-gR-vTv" firstAttribute="width" secondItem="7Jo-8U-V04" secondAttribute="width" id="HdT-g5-arr"/>
+                            <constraint firstItem="GSI-rX-8Xc" firstAttribute="leading" secondItem="sDY-in-mJo" secondAttribute="leading" id="Jiu-w1-YTP"/>
+                            <constraint firstItem="Ejq-xS-9VH" firstAttribute="width" secondItem="Ejq-xS-9VH" secondAttribute="height" multiplier="1:1" id="M54-MI-YjD"/>
+                            <constraint firstItem="HIV-vw-q88" firstAttribute="width" secondItem="iKF-gR-vTv" secondAttribute="width" id="NEM-D2-oFf"/>
+                            <constraint firstItem="DFB-9k-eUi" firstAttribute="top" secondItem="mya-1y-gAV" secondAttribute="bottom" id="NVO-Ij-Pii"/>
+                            <constraint firstItem="d73-wy-qpL" firstAttribute="top" secondItem="CHb-oj-9JW" secondAttribute="bottom" id="Nxb-a4-qqY"/>
+                            <constraint firstItem="TW1-6b-lM2" firstAttribute="width" secondItem="sDY-in-mJo" secondAttribute="width" multiplier="0.5" id="PYD-hA-b87"/>
+                            <constraint firstItem="mya-1y-gAV" firstAttribute="width" secondItem="mya-1y-gAV" secondAttribute="height" multiplier="1:1" id="PsW-sp-Ehq"/>
+                            <constraint firstItem="fcr-5c-Knp" firstAttribute="width" secondItem="fcr-5c-Knp" secondAttribute="height" multiplier="1:1" id="QUd-Ih-qp4"/>
+                            <constraint firstItem="mya-1y-gAV" firstAttribute="leading" secondItem="1At-OO-0Mu" secondAttribute="trailing" id="Qbn-HM-gP5"/>
+                            <constraint firstItem="DFB-9k-eUi" firstAttribute="width" secondItem="DFB-9k-eUi" secondAttribute="height" multiplier="1:1" id="QtO-RQ-ZUb"/>
+                            <constraint firstAttribute="trailing" secondItem="CHb-oj-9JW" secondAttribute="trailing" id="S4J-JS-4p4"/>
+                            <constraint firstItem="Ejq-xS-9VH" firstAttribute="top" secondItem="DFB-9k-eUi" secondAttribute="bottom" id="SzL-pd-gI2"/>
+                            <constraint firstItem="7Jo-8U-V04" firstAttribute="top" secondItem="iKF-gR-vTv" secondAttribute="bottom" id="T0l-QA-pU9"/>
+                            <constraint firstItem="1At-OO-0Mu" firstAttribute="leading" secondItem="sDY-in-mJo" secondAttribute="leading" id="TXT-yC-JZu"/>
+                            <constraint firstItem="Ejq-xS-9VH" firstAttribute="width" secondItem="Ejq-xS-9VH" secondAttribute="height" multiplier="1:1" id="TiW-qr-scl"/>
+                            <constraint firstItem="TW1-6b-lM2" firstAttribute="top" secondItem="1KZ-JS-Lff" secondAttribute="bottom" id="TlP-6L-2fj"/>
+                            <constraint firstItem="HIV-vw-q88" firstAttribute="top" secondItem="9vS-Gs-HmY" secondAttribute="bottom" id="VML-zm-oNN"/>
+                            <constraint firstItem="1KZ-JS-Lff" firstAttribute="height" secondItem="TW1-6b-lM2" secondAttribute="height" id="VN5-cw-JgP"/>
+                            <constraint firstItem="Ejq-xS-9VH" firstAttribute="leading" secondItem="GSI-rX-8Xc" secondAttribute="trailing" id="Vkl-yJ-WoR"/>
+                            <constraint firstItem="HIV-vw-q88" firstAttribute="width" secondItem="HIV-vw-q88" secondAttribute="height" multiplier="1:1" id="Vn2-BX-qp6"/>
+                            <constraint firstItem="GSI-rX-8Xc" firstAttribute="width" secondItem="sDY-in-mJo" secondAttribute="width" multiplier="0.25" id="Ww8-tg-JJC"/>
+                            <constraint firstItem="Ejq-xS-9VH" firstAttribute="width" secondItem="GSI-rX-8Xc" secondAttribute="width" id="X8F-ly-5qT"/>
+                            <constraint firstItem="mya-1y-gAV" firstAttribute="width" secondItem="mya-1y-gAV" secondAttribute="height" multiplier="1:1" id="YnQ-gx-zk6"/>
+                            <constraint firstItem="DFB-9k-eUi" firstAttribute="width" secondItem="Ejq-xS-9VH" secondAttribute="width" id="ZpN-YX-gM6"/>
+                            <constraint firstItem="jWO-aI-CiG" firstAttribute="top" secondItem="1At-OO-0Mu" secondAttribute="bottom" id="aJM-ZX-Ymc"/>
+                            <constraint firstItem="mya-1y-gAV" firstAttribute="width" secondItem="mya-1y-gAV" secondAttribute="height" multiplier="1:1" id="aPU-4V-cg8"/>
+                            <constraint firstItem="mya-1y-gAV" firstAttribute="width" secondItem="mya-1y-gAV" secondAttribute="height" multiplier="1:1" id="aiD-90-PmT"/>
+                            <constraint firstItem="3gm-cf-fmM" firstAttribute="width" secondItem="fcr-5c-Knp" secondAttribute="width" id="axt-y5-rvr"/>
+                            <constraint firstItem="1At-OO-0Mu" firstAttribute="width" secondItem="1At-OO-0Mu" secondAttribute="height" multiplier="1:1" id="bI4-1T-3Bi"/>
+                            <constraint firstItem="Ejq-xS-9VH" firstAttribute="width" secondItem="7Jo-8U-V04" secondAttribute="width" id="bdI-Dg-aYL"/>
+                            <constraint firstItem="gtw-Ly-Ie7" firstAttribute="width" secondItem="gtw-Ly-Ie7" secondAttribute="height" multiplier="1:1" id="bwU-25-pOp"/>
+                            <constraint firstItem="3gm-cf-fmM" firstAttribute="leading" secondItem="iKF-gR-vTv" secondAttribute="trailing" id="byd-YW-c9c"/>
+                            <constraint firstItem="7Jo-8U-V04" firstAttribute="width" secondItem="7Jo-8U-V04" secondAttribute="height" multiplier="1:1" id="cnV-gs-sQQ"/>
+                            <constraint firstItem="fcr-5c-Knp" firstAttribute="width" secondItem="GSI-rX-8Xc" secondAttribute="width" id="dJA-BR-lQi"/>
+                            <constraint firstAttribute="trailing" secondItem="MxH-OZ-BP6" secondAttribute="trailing" id="e3X-lI-Mje"/>
+                            <constraint firstItem="MxH-OZ-BP6" firstAttribute="width" secondItem="MxH-OZ-BP6" secondAttribute="height" multiplier="1:1" id="fUU-ao-lcO"/>
+                            <constraint firstItem="3gm-cf-fmM" firstAttribute="width" secondItem="3gm-cf-fmM" secondAttribute="height" multiplier="1:1" id="gJb-1S-WKx"/>
+                            <constraint firstItem="jWO-aI-CiG" firstAttribute="width" secondItem="GSI-rX-8Xc" secondAttribute="width" id="hqz-ee-BVj"/>
+                            <constraint firstItem="mya-1y-gAV" firstAttribute="width" secondItem="DFB-9k-eUi" secondAttribute="width" id="hv8-Fj-CkT"/>
+                            <constraint firstItem="DFB-9k-eUi" firstAttribute="width" secondItem="DFB-9k-eUi" secondAttribute="height" multiplier="1:1" id="iLq-Ql-uA0"/>
+                            <constraint firstItem="i4d-r0-jxR" firstAttribute="width" secondItem="1At-OO-0Mu" secondAttribute="width" id="ieH-7e-jIB"/>
+                            <constraint firstItem="DFB-9k-eUi" firstAttribute="leading" secondItem="jWO-aI-CiG" secondAttribute="trailing" id="j6l-Yp-FHj"/>
+                            <constraint firstItem="7Jo-8U-V04" firstAttribute="width" secondItem="fcr-5c-Knp" secondAttribute="width" id="jzE-10-eyY"/>
+                            <constraint firstItem="1KZ-JS-Lff" firstAttribute="top" secondItem="GSI-rX-8Xc" secondAttribute="bottom" id="k6J-Tc-h7D"/>
+                            <constraint firstItem="MxH-OZ-BP6" firstAttribute="width" secondItem="MxH-OZ-BP6" secondAttribute="height" multiplier="1:1" id="kjV-Ec-VIY"/>
+                            <constraint firstItem="3gm-cf-fmM" firstAttribute="width" secondItem="3gm-cf-fmM" secondAttribute="height" multiplier="1:1" id="kmq-SI-MnI"/>
+                            <constraint firstItem="70K-1h-Wj4" firstAttribute="leading" secondItem="sDY-in-mJo" secondAttribute="leading" id="nGh-7o-qKu"/>
+                            <constraint firstItem="3gm-cf-fmM" firstAttribute="top" secondItem="MxH-OZ-BP6" secondAttribute="bottom" id="pAa-IT-VKi"/>
+                            <constraint firstAttribute="trailing" secondItem="fcr-5c-Knp" secondAttribute="trailing" id="pBH-z8-f5y"/>
+                            <constraint firstItem="gtw-Ly-Ie7" firstAttribute="leading" secondItem="9vS-Gs-HmY" secondAttribute="trailing" id="pMx-tK-c40"/>
+                            <constraint firstItem="9vS-Gs-HmY" firstAttribute="width" secondItem="HIV-vw-q88" secondAttribute="width" id="qGn-bu-NPy"/>
+                            <constraint firstItem="CHb-oj-9JW" firstAttribute="top" secondItem="fcr-5c-Knp" secondAttribute="bottom" id="rnN-Q4-if5"/>
+                            <constraint firstItem="jWO-aI-CiG" firstAttribute="width" secondItem="jWO-aI-CiG" secondAttribute="height" multiplier="1:1" id="sLq-lk-iRX"/>
+                            <constraint firstItem="1KZ-JS-Lff" firstAttribute="top" secondItem="Ejq-xS-9VH" secondAttribute="bottom" id="u5E-ia-z3h"/>
+                            <constraint firstItem="Ejq-xS-9VH" firstAttribute="width" secondItem="Ejq-xS-9VH" secondAttribute="height" multiplier="1:1" id="u77-Th-aFD"/>
+                            <constraint firstItem="fcr-5c-Knp" firstAttribute="leading" secondItem="7Jo-8U-V04" secondAttribute="trailing" id="udS-MN-5rR"/>
+                            <constraint firstItem="MxH-OZ-BP6" firstAttribute="leading" secondItem="HIV-vw-q88" secondAttribute="trailing" id="ueN-cd-iSv"/>
+                            <constraint firstItem="fcr-5c-Knp" firstAttribute="top" secondItem="3gm-cf-fmM" secondAttribute="bottom" id="uuO-Fs-OBW"/>
+                            <constraint firstItem="9vS-Gs-HmY" firstAttribute="width" secondItem="9vS-Gs-HmY" secondAttribute="height" multiplier="1:1" id="vGt-5x-bHD"/>
+                            <constraint firstItem="DFB-9k-eUi" firstAttribute="width" secondItem="DFB-9k-eUi" secondAttribute="height" multiplier="1:1" id="w51-nz-lxS"/>
+                            <constraint firstAttribute="trailing" secondItem="gtw-Ly-Ie7" secondAttribute="trailing" id="wf8-Ct-esb"/>
+                            <constraint firstItem="gtw-Ly-Ie7" firstAttribute="width" secondItem="MxH-OZ-BP6" secondAttribute="width" id="x7J-NA-cvx"/>
+                            <constraint firstItem="jWO-aI-CiG" firstAttribute="leading" secondItem="sDY-in-mJo" secondAttribute="leading" id="xkM-6E-QVW"/>
+                            <constraint firstItem="iKF-gR-vTv" firstAttribute="top" secondItem="HIV-vw-q88" secondAttribute="bottom" id="z43-CB-Dfc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bI4-1T-3Bi"/>
+                                <exclude reference="5Jn-Dj-D2c"/>
+                                <exclude reference="PsW-sp-Ehq"/>
+                                <exclude reference="YnQ-gx-zk6"/>
+                                <exclude reference="aPU-4V-cg8"/>
+                                <exclude reference="aiD-90-PmT"/>
+                                <exclude reference="8Vd-C5-OPj"/>
+                                <exclude reference="vGt-5x-bHD"/>
+                                <exclude reference="7Rd-Eh-fUF"/>
+                                <exclude reference="sLq-lk-iRX"/>
+                                <exclude reference="9Px-rg-loj"/>
+                                <exclude reference="QtO-RQ-ZUb"/>
+                                <exclude reference="iLq-Ql-uA0"/>
+                                <exclude reference="w51-nz-lxS"/>
+                                <exclude reference="Vn2-BX-qp6"/>
+                                <exclude reference="M54-MI-YjD"/>
+                                <exclude reference="TiW-qr-scl"/>
+                                <exclude reference="bdI-Dg-aYL"/>
+                                <exclude reference="u77-Th-aFD"/>
+                                <exclude reference="2p5-ES-GfZ"/>
+                                <exclude reference="CIe-Sz-yg3"/>
+                                <exclude reference="fUU-ao-lcO"/>
+                                <exclude reference="0aB-3K-whS"/>
+                                <exclude reference="CS1-nI-iQ1"/>
+                                <exclude reference="gJb-1S-WKx"/>
+                                <exclude reference="kmq-SI-MnI"/>
+                                <exclude reference="cnV-gs-sQQ"/>
+                                <exclude reference="jzE-10-eyY"/>
+                                <exclude reference="QUd-Ih-qp4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addButton" destination="CHb-oj-9JW" id="rgz-1p-Hnq"/>
+                        <outlet property="backButton" destination="TW1-6b-lM2" id="qVe-EO-gSk"/>
+                        <outlet property="chainLabel" destination="wIC-SV-8Co" id="mPt-tu-iMK"/>
+                        <outlet property="clearButton" destination="i4d-r0-jxR" id="8mW-Uu-jZ0"/>
+                        <outlet property="divideButton" destination="gtw-Ly-Ie7" id="ynq-Hz-4Tk"/>
+                        <outlet property="dotButton" destination="7Jo-8U-V04" id="zmk-BR-bvH"/>
+                        <outlet property="equalButton" destination="CHb-oj-9JW" id="qg9-1Q-xYq"/>
+                        <outlet property="resultLabel" destination="i4y-Ez-KNl" id="IIo-Za-3Cd"/>
+                        <outlet property="subtractButton" destination="3gm-cf-fmM" id="7cQ-ec-e4A"/>
+                        <outlet property="timesButton" destination="MxH-OZ-BP6" id="CTG-OB-3eA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KuV-tU-zaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.5" y="1004.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yBu-z7-FmG">
@@ -1017,6 +1614,7 @@
         <image name="atDark" width="40" height="39"/>
         <image name="backarrow" width="14" height="24"/>
         <image name="card" width="287" height="193"/>
+        <image name="delete" width="30" height="31"/>
         <image name="lockDark" width="32" height="42"/>
         <image name="profileDark" width="40" height="40"/>
         <image name="visaLogo" width="65" height="27"/>

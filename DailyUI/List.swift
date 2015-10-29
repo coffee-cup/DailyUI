@@ -14,10 +14,19 @@ let list = [
         "icon" : "signup.png",
         "segue": "SignUpSegue"
     ],
-    
     [
         "title": "Credit Card",
         "icon": "creditcard.png",
         "segue": "CreditCardSegue"
+    ],
+    [
+        "title": "LandingPage",
+        "icon": "landingpage.png",
+        "segue": "LandingPageSegue"
+    ],
+    [
+        "title": "Calculator",
+        "icon": "calculator",
+        "segue": "CalculatorSegue"
     ]
 ]
