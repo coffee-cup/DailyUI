@@ -214,7 +214,7 @@ class CalculatorViewController: UIViewController {
         animateOperand(text, label: label, forceIn: forceIn)
     }
     
-    func animateOperator(doNotSet: Bool = false, forceIn: Bool = false) {
+    func animateOperator(forceIn: Bool = false) {
         print("animating operator \(forceIn)")
         let text = currentOperator ?? ""
         operatorLatest = text
@@ -222,12 +222,10 @@ class CalculatorViewController: UIViewController {
             if animatingOperator {
                 let triggerTime = (Int64(NSEC_PER_MSEC) * 700)
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, triggerTime), dispatch_get_main_queue(), { () -> Void in
-                    self.animateOperator(forceIn: forceIn)
+                    self.animateOperator(forceIn)
                 })
             } else {
-                if !doNotSet {
-                    operatorLabel.text = text
-                }
+                operatorLabel.text = text
                 operatorLabel.animation = "slideLeft"
                 operatorLabel.damping = 0.8
                 operatorLabel.curve = "EaseInOut"
@@ -515,9 +513,13 @@ class CalculatorViewController: UIViewController {
         equalJustComputed = false
         
         // chain
+        firstLatest = ""
+        secondLatest = ""
+        operatorLatest = ""
+        
         animateFirstOperand(true)
         animateSecondOperand(true)
-        animateOperator(forceIn: true)
+        animateOperator(true)
     }
 
     @IBAction func backButtonDidTouch(sender: AnyObject) {
