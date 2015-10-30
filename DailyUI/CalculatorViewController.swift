@@ -140,7 +140,7 @@ class CalculatorViewController: UIViewController {
             } else {
                 animatingSecond = true
             }
-            UIView.animateWithDuration(0.7, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
                     label.transform = CGAffineTransformMakeTranslation(-400, 0)
                 }, completion: {finished in
                     label.text = ""
@@ -165,18 +165,12 @@ class CalculatorViewController: UIViewController {
             
             // dont animate if not first number
             if (text.characters.count > 1 && text != "0.") || backButtonPressed {
-                if (animating) {
-                    let triggerTime = (Int64(NSEC_PER_MSEC) * 700)
-                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, triggerTime), dispatch_get_main_queue(), { () -> Void in
-                        self.animateOperand(text, label: label, forceIn: forceIn)
-                    })
-                }
                 backButtonPressed = false
                 return
             }
             
             if (label == firstOperandLabel && animatingFirst) || (label == secondOperandLabel && animatingSecond) {
-                let triggerTime = (Int64(NSEC_PER_MSEC) * 700)
+                let triggerTime = (Int64(NSEC_PER_MSEC) * 320)
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, triggerTime), dispatch_get_main_queue(), { () -> Void in
 //                    self.animateOperand(text, label: label, forceIn: forceIn)
                     self.animateOperand(text, label: label, doNotSet: true, forceIn: forceIn)
@@ -238,7 +232,7 @@ class CalculatorViewController: UIViewController {
             }
         } else if (operand != nil && currentOperator != nil) || forceIn {
             animatingOperator = true
-            UIView.animateWithDuration(0.7, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
                     self.operatorLabel.transform = CGAffineTransformMakeTranslation(-300, 0)
                 }, completion: {finished in
                     self.operatorLabel.text = ""
