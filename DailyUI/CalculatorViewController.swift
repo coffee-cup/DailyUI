@@ -217,11 +217,12 @@ class CalculatorViewController: UIViewController {
     func animateOperator(doNotSet: Bool = false, forceIn: Bool = false) {
         print("animating operator \(forceIn)")
         let text = currentOperator ?? ""
+        operatorLatest = text
         if text != "" && !forceIn {
             if animatingOperator {
                 let triggerTime = (Int64(NSEC_PER_MSEC) * 700)
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, triggerTime), dispatch_get_main_queue(), { () -> Void in
-                    self.animateOperator(true, forceIn: forceIn)
+                    self.animateOperator(forceIn: forceIn)
                 })
             } else {
                 if !doNotSet {
@@ -231,9 +232,10 @@ class CalculatorViewController: UIViewController {
                 operatorLabel.damping = 0.8
                 operatorLabel.curve = "EaseInOut"
                 operatorLabel.animateNext({
-                    if self.currentOperator != nil {
-                        self.operatorLabel.text = self.currentOperator!
-                    }
+                    self.operatorLabel.text = self.operatorLatest
+//                    if self.currentOperator != nil {
+//                        self.operatorLabel.text = self.currentOperator!
+//                    }
                 })
             }
         } else if (operand != nil && currentOperator != nil) || forceIn {
