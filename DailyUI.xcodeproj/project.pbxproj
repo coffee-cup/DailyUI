@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1B0FCF1BE1CC3C00318CCC /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B0FCE1BE1CC3C00318CCC /* ZFRippleButton.swift */; };
 		9C1E401E1BDB387E00D7A26F /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 9C1E401D1BDB387E00D7A26F /* HelveticaNeue.dfont */; };
 		9C2A0A391BDB2C450084D180 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A0A381BDB2C450084D180 /* CreditCardViewController.swift */; };
 		9C2C694A1BE0A9DC0023E756 /* UbuntuMono-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C69491BE0A9DC0023E756 /* UbuntuMono-R.ttf */; };
@@ -78,6 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C1B0FCE1BE1CC3C00318CCC /* ZFRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFRippleButton.swift; sourceTree = "<group>"; };
 		9C1E401D1BDB387E00D7A26F /* HelveticaNeue.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.dfont; sourceTree = "<group>"; };
 		9C2A0A381BDB2C450084D180 /* CreditCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
 		9C2C69491BE0A9DC0023E756 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-R.ttf"; sourceTree = "<group>"; };
@@ -167,6 +169,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C1B0FCD1BE1CC2300318CCC /* ZFRippleButton */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B0FCE1BE1CC3C00318CCC /* ZFRippleButton.swift */,
+			);
+			name = ZFRippleButton;
+			sourceTree = "<group>";
+		};
 		9C54107B1BDB47D60052024B /* Sweetercolor */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		9C7E1EB41BD735BB006B9B22 /* DailyUI */ = {
 			isa = PBXGroup;
 			children = (
+				9C1B0FCD1BE1CC2300318CCC /* ZFRippleButton */,
 				9C2C694D1BE1C4010023E756 /* Assets.xcassets */,
 				9C54107B1BDB47D60052024B /* Sweetercolor */,
 				9C7E1F031BD8B494006B9B22 /* Spring */,
@@ -477,6 +488,7 @@
 				9C7E1F361BD8B494006B9B22 /* SpringButton.swift in Sources */,
 				9C7E1F291BD8B494006B9B22 /* DesignableTabBarController.swift in Sources */,
 				9C7E1F231BD8B494006B9B22 /* AsyncImageView.swift in Sources */,
+				9C1B0FCF1BE1CC3C00318CCC /* ZFRippleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

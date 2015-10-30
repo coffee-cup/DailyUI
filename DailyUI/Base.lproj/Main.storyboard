@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hn9-op-uej">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hn9-op-uej">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -22,6 +22,7 @@
             <string>PlayfairDisplay-Regular</string>
         </mutableArray>
         <mutableArray key="UbuntuMono-R.ttf">
+            <string>UbuntuMono-Regular</string>
             <string>UbuntuMono-Regular</string>
             <string>UbuntuMono-Regular</string>
             <string>UbuntuMono-Regular</string>
@@ -1047,7 +1048,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TW1-6b-lM2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TW1-6b-lM2" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="573" width="188" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.8784313725490196" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
@@ -1058,11 +1059,19 @@
                                 <state key="normal" image="delete">
                                     <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="backButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="FBn-cX-86t"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KZ-JS-Lff">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KZ-JS-Lff" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="479" width="188" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1073,6 +1082,14 @@
                                 <state key="normal" title="0">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="MH3-fd-yh7"/>
@@ -1082,7 +1099,7 @@
                                     <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="bej-r2-r4m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSI-rX-8Xc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSI-rX-8Xc" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="385" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1094,6 +1111,14 @@
                                 <state key="normal" title="1">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="7TG-TF-09F"/>
@@ -1103,7 +1128,7 @@
                                     <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="de3-ud-lPr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcr-5c-Knp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcr-5c-Knp" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="281" y="479" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.50196078431372548" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
@@ -1115,6 +1140,17 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" red="1" green="0.25098039215686274" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="IF2-YZ-2wO"/>
@@ -1124,7 +1160,7 @@
                                     <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="FIe-dH-zfd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-cf-fmM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-cf-fmM" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="281" y="385" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.89803921568627454" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
@@ -1136,6 +1172,17 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" red="1" green="0.84705882352941175" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Dw0-i4-Pnm"/>
@@ -1145,7 +1192,7 @@
                                     <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="ftI-bT-8fj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-OZ-BP6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-OZ-BP6" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="281" y="291" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.5490196078431373" green="0.61960784313725492" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1157,6 +1204,17 @@
                                 <state key="normal" title="x">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" red="0.32549019607843138" green="0.42745098039215684" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="P28-CD-aSB"/>
@@ -1167,7 +1225,7 @@
                                     <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="chG-b6-gJ0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtw-Ly-Ie7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtw-Ly-Ie7" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="281" y="197" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.91764705882352937" green="0.50196078431372548" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
@@ -1179,6 +1237,17 @@
                                 <state key="normal" title="/">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" red="0.8784313725490196" green="0.25098039215686274" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="BAB-Og-WDX"/>
@@ -1189,7 +1258,7 @@
                                     <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="Yfw-P0-giH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWO-aI-CiG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWO-aI-CiG" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="291" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1201,6 +1270,14 @@
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="96M-b4-3HD"/>
@@ -1210,7 +1287,7 @@
                                     <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="nW4-g3-ni0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1At-OO-0Mu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1At-OO-0Mu" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="197" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1222,6 +1299,14 @@
                                 <state key="normal" title="7">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="aVA-1E-V52"/>
@@ -1231,7 +1316,7 @@
                                     <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="KD6-38-ngu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jo-8U-V04">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jo-8U-V04" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="187" y="479" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1243,6 +1328,14 @@
                                 <state key="normal" title=".">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="4qE-0c-MiM"/>
@@ -1252,7 +1345,7 @@
                                     <action selector="dotButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="Bn0-8F-FEU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKF-gR-vTv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKF-gR-vTv" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="187" y="385" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1264,6 +1357,14 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="fk1-p1-iUq"/>
@@ -1273,7 +1374,7 @@
                                     <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="PgA-0t-Q0Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIV-vw-q88">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIV-vw-q88" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="187" y="291" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1285,6 +1386,14 @@
                                 <state key="normal" title="6">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="9lm-A4-ZKU"/>
@@ -1294,7 +1403,7 @@
                                     <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="JDU-Tf-XJW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vS-Gs-HmY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vS-Gs-HmY" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="187" y="197" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1306,6 +1415,14 @@
                                 <state key="normal" title="9">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="dsB-HP-OPE"/>
@@ -1315,7 +1432,7 @@
                                     <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="nqC-9F-hJR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejq-xS-9VH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejq-xS-9VH" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="94" y="385" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1327,6 +1444,14 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="SFu-Fo-K9G"/>
@@ -1336,7 +1461,7 @@
                                     <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="OfX-ij-lGc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-oj-9JW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-oj-9JW" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="187" y="573" width="188" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.52941176469999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1347,11 +1472,19 @@
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="operatorButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="Pe1-rF-0Yz"/>
+                                    <action selector="equalButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="can-wU-ooa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFB-9k-eUi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFB-9k-eUi" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="94" y="291" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1363,6 +1496,14 @@
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="nPJ-Nk-8GW"/>
@@ -1372,7 +1513,7 @@
                                     <action selector="numberButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="Tgo-eZ-Nv7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mya-1y-gAV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mya-1y-gAV" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                 <rect key="frame" x="94" y="197" width="94" height="94"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1384,6 +1525,14 @@
                                 <state key="normal" title="8">
                                     <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="yb9-lo-NnN"/>
@@ -1396,7 +1545,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70K-1h-Wj4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="197"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4d-r0-jxR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4d-r0-jxR" customClass="ZFRippleButton" customModule="DailyUI" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="103" width="94" height="94"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.87843137250000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1404,10 +1553,21 @@
                                             <constraint firstAttribute="width" secondItem="i4d-r0-jxR" secondAttribute="height" multiplier="1:1" id="R2f-5G-GTa"/>
                                             <constraint firstAttribute="width" secondItem="i4d-r0-jxR" secondAttribute="height" multiplier="2:1" id="vEQ-Pg-mJD"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="50"/>
-                                        <state key="normal" title="C">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <state key="normal" title="c">
                                             <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rippleOverBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="trackTouchLocation" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowRippleEnable" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                                <color key="value" red="1" green="0.50196078430000002" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ripplePercent">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="vEQ-Pg-mJD"/>
@@ -1417,32 +1577,65 @@
                                             <action selector="clearButtonDidTouch:" destination="M0V-4N-bzN" eventType="touchUpInside" id="EpN-wK-5Kh"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="i4y-Ez-KNl">
-                                        <rect key="frame" x="102" y="103" width="265" height="82"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="i4y-Ez-KNl">
+                                        <rect key="frame" x="102" y="103" width="265" height="71"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="70"/>
                                         <color key="textColor" red="0.22352941330000001" green="0.22352941330000001" blue="0.22352941330000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2+2 &gt; 4x6 &gt; 24-24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIC-SV-8Co">
-                                        <rect key="frame" x="10" y="8" width="199" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="358" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wIC-SV-8Co" customClass="SpringLabel" customModule="DailyUI" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="40" width="36" height="24"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="24"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E47-9c-dBL" customClass="SpringLabel" customModule="DailyUI" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="40" width="24" height="24"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="0ep-1i-tzn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="587" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ryt-NH-l7K" customClass="SpringLabel" customModule="DailyUI" customModuleProvider="target">
+                                        <rect key="frame" x="116" y="40" width="36" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="UbuntuMono-Regular" family="Ubuntu Mono" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.52941176470588236" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="E47-9c-dBL" firstAttribute="top" secondItem="70K-1h-Wj4" secondAttribute="top" constant="40" id="8SF-Ra-Ibn"/>
                                     <constraint firstItem="i4y-Ez-KNl" firstAttribute="leading" secondItem="i4d-r0-jxR" secondAttribute="trailing" constant="8" id="HJk-a7-Ovh"/>
+                                    <constraint firstAttribute="trailing" secondItem="wIC-SV-8Co" secondAttribute="trailing" constant="8" id="LlK-uM-kAM"/>
                                     <constraint firstAttribute="trailing" secondItem="i4y-Ez-KNl" secondAttribute="trailing" constant="8" id="Mk7-Vr-b5m"/>
-                                    <constraint firstItem="wIC-SV-8Co" firstAttribute="top" secondItem="70K-1h-Wj4" secondAttribute="top" constant="8" id="P7e-Ag-H7t"/>
+                                    <constraint firstItem="wIC-SV-8Co" firstAttribute="top" secondItem="70K-1h-Wj4" secondAttribute="top" constant="40" id="P7e-Ag-H7t"/>
+                                    <constraint firstItem="ryt-NH-l7K" firstAttribute="leading" secondItem="E47-9c-dBL" secondAttribute="trailing" constant="8" id="ZPL-tn-Z7V"/>
                                     <constraint firstItem="i4y-Ez-KNl" firstAttribute="top" secondItem="i4d-r0-jxR" secondAttribute="top" id="af7-bR-b8D"/>
+                                    <constraint firstAttribute="trailing" secondItem="ryt-NH-l7K" secondAttribute="trailing" constant="8" id="b3D-1A-GjX"/>
+                                    <constraint firstItem="ryt-NH-l7K" firstAttribute="leading" secondItem="E47-9c-dBL" secondAttribute="trailing" constant="8" id="fUT-jg-nN8"/>
                                     <constraint firstAttribute="bottom" secondItem="i4d-r0-jxR" secondAttribute="bottom" id="gsa-uu-xqI"/>
+                                    <constraint firstAttribute="trailing" secondItem="ryt-NH-l7K" secondAttribute="trailing" constant="8" id="gua-se-NVj"/>
+                                    <constraint firstItem="ryt-NH-l7K" firstAttribute="top" secondItem="70K-1h-Wj4" secondAttribute="top" constant="40" id="kMM-px-6CJ"/>
                                     <constraint firstItem="i4d-r0-jxR" firstAttribute="leading" secondItem="70K-1h-Wj4" secondAttribute="leading" id="lSf-cY-J9t"/>
-                                    <constraint firstItem="wIC-SV-8Co" firstAttribute="leading" secondItem="70K-1h-Wj4" secondAttribute="leading" constant="10" id="qMt-f1-jCM"/>
+                                    <constraint firstItem="E47-9c-dBL" firstAttribute="leading" secondItem="wIC-SV-8Co" secondAttribute="trailing" constant="8" id="ocJ-UW-Ej3"/>
+                                    <constraint firstItem="wIC-SV-8Co" firstAttribute="leading" secondItem="70K-1h-Wj4" secondAttribute="leading" constant="40" id="qMt-f1-jCM"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LlK-uM-kAM"/>
+                                        <exclude reference="b3D-1A-GjX"/>
+                                        <exclude reference="fUT-jg-nN8"/>
+                                        <exclude reference="gua-se-NVj"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <animations/>
@@ -1573,16 +1766,29 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="addButton" destination="CHb-oj-9JW" id="rgz-1p-Hnq"/>
+                        <outlet property="addButton" destination="fcr-5c-Knp" id="7f1-mH-Fyn"/>
                         <outlet property="backButton" destination="TW1-6b-lM2" id="qVe-EO-gSk"/>
-                        <outlet property="chainLabel" destination="wIC-SV-8Co" id="mPt-tu-iMK"/>
                         <outlet property="clearButton" destination="i4d-r0-jxR" id="8mW-Uu-jZ0"/>
                         <outlet property="divideButton" destination="gtw-Ly-Ie7" id="ynq-Hz-4Tk"/>
                         <outlet property="dotButton" destination="7Jo-8U-V04" id="zmk-BR-bvH"/>
+                        <outlet property="eightButton" destination="mya-1y-gAV" id="L18-Zl-qfU"/>
                         <outlet property="equalButton" destination="CHb-oj-9JW" id="qg9-1Q-xYq"/>
+                        <outlet property="firstOperandLabel" destination="wIC-SV-8Co" id="WZS-5v-o3V"/>
+                        <outlet property="fiveButton" destination="DFB-9k-eUi" id="hAQ-3t-6CQ"/>
+                        <outlet property="fourButton" destination="jWO-aI-CiG" id="Akx-az-obg"/>
+                        <outlet property="nineButton" destination="9vS-Gs-HmY" id="Xrq-Ui-lAi"/>
+                        <outlet property="oneButton" destination="GSI-rX-8Xc" id="tIG-hW-f7q"/>
+                        <outlet property="operatorLabel" destination="E47-9c-dBL" id="aYR-fC-V36"/>
                         <outlet property="resultLabel" destination="i4y-Ez-KNl" id="IIo-Za-3Cd"/>
+                        <outlet property="resultMain" destination="70K-1h-Wj4" id="xNE-6d-O8j"/>
+                        <outlet property="secondOperandLabel" destination="ryt-NH-l7K" id="f0q-oO-4lz"/>
+                        <outlet property="sevenButton" destination="1At-OO-0Mu" id="TjB-Hw-UHh"/>
+                        <outlet property="sixButton" destination="HIV-vw-q88" id="KC4-dE-8Xu"/>
                         <outlet property="subtractButton" destination="3gm-cf-fmM" id="7cQ-ec-e4A"/>
+                        <outlet property="threeButton" destination="iKF-gR-vTv" id="8Z9-11-0ph"/>
                         <outlet property="timesButton" destination="MxH-OZ-BP6" id="CTG-OB-3eA"/>
+                        <outlet property="twoButton" destination="Ejq-xS-9VH" id="KW3-pM-yP2"/>
+                        <outlet property="zeroButton" destination="1KZ-JS-Lff" id="GAc-2v-DG2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KuV-tU-zaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
