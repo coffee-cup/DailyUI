@@ -86,8 +86,8 @@ class CalculatorViewController: UIViewController {
     var currentMainColour: UIColor!
     var operand: String?
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         currentTintColour = equalTint
         currentMainColour = equalMain
@@ -98,6 +98,10 @@ class CalculatorViewController: UIViewController {
         firstOperandLabel.text = ""
         operatorLabel.text = ""
         secondOperandLabel.text = ""
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
         animateColours()
     }
@@ -176,7 +180,6 @@ class CalculatorViewController: UIViewController {
                     self.animateOperand(text, label: label, doNotSet: true, forceIn: forceIn)
                 })
             } else {
-                print("animating operator \(text)")
                 label.animation = "slideLeft"
                 label.damping = 0.8
                 label.curve = "EaseInOut"
@@ -192,16 +195,13 @@ class CalculatorViewController: UIViewController {
     }
     
     func animateFirstOperand(forceIn: Bool = false) {
-        print("animating first operator \(forceIn)")
         let text = resultLabel.text ?? "0"
         firstLatest = text
-        print("\(text) \n")
         let label = firstOperandLabel
         animateOperand(text, label: label, forceIn: forceIn)
     }
     
     func animateSecondOperand(forceIn: Bool = false) {
-        print("animating second operator \(forceIn)")
         let text = resultLabel.text ?? "0"
         secondLatest = text
         let label = secondOperandLabel
@@ -209,7 +209,6 @@ class CalculatorViewController: UIViewController {
     }
     
     func animateOperator(forceIn: Bool = false) {
-        print("animating operator \(forceIn)")
         let text = currentOperator ?? ""
         operatorLatest = text
         if text != "" && !forceIn {
@@ -447,7 +446,6 @@ class CalculatorViewController: UIViewController {
                 if operand == nil {
                     animateFirstOperand()
                 } else {
-                    print("animating second with dot")
                     animateSecondOperand()
                 }
             }
@@ -521,7 +519,7 @@ class CalculatorViewController: UIViewController {
             dismissViewControllerAnimated(true, completion: nil)
         } else {
             if let text = resultLabel.text {
-                if text == "0" {
+                if text == "0" || equalJustComputed {
                     exitTriggered = true
                     animateExitTrigger()
                 } else {

@@ -20,7 +20,7 @@ let list = [
         "segue": "CreditCardSegue"
     ],
     [
-        "title": "LandingPage",
+        "title": "Landing Page",
         "icon": "landingpage.png",
         "segue": "LandingPageSegue"
     ],
@@ -28,5 +28,10 @@ let list = [
         "title": "Calculator",
         "icon": "calculator",
         "segue": "CalculatorSegue"
+    ],
+    [
+        "title": "App Icon",
+        "icon": "appicon",
+        "segue": "IconSegue"
     ]
 ]

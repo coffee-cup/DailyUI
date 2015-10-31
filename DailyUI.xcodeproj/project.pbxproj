@@ -59,6 +59,7 @@
 		9C7E1F3C1BD8B494006B9B22 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E1F1F1BD8B494006B9B22 /* TransitionManager.swift */; };
 		9C7E1F3D1BD8B494006B9B22 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E1F201BD8B494006B9B22 /* TransitionZoom.swift */; };
 		9C7E1F3E1BD8B494006B9B22 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E1F211BD8B494006B9B22 /* UnwindSegue.swift */; };
+		9CE1DFA81BE54AD800A8B0A3 /* AppIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE1DFA71BE54AD800A8B0A3 /* AppIconViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		9C7E1F1F1BD8B494006B9B22 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		9C7E1F201BD8B494006B9B22 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		9C7E1F211BD8B494006B9B22 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		9CE1DFA71BE54AD800A8B0A3 /* AppIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 				9C7E1EFF1BD8B162006B9B22 /* SignUpViewController.swift */,
 				9C2A0A381BDB2C450084D180 /* CreditCardViewController.swift */,
 				9C2C694B1BE0ABF30023E756 /* CalculatorViewController.swift */,
+				9CE1DFA71BE54AD800A8B0A3 /* AppIconViewController.swift */,
 			);
 			path = DailyUI;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				9C7E1F321BD8B494006B9B22 /* Misc.swift in Sources */,
 				9C7E1EEA1BD77A88006B9B22 /* DailyTableViewCell.swift in Sources */,
 				9C7E1F351BD8B494006B9B22 /* SpringAnimation.swift in Sources */,
+				9CE1DFA81BE54AD800A8B0A3 /* AppIconViewController.swift in Sources */,
 				9C7E1F391BD8B494006B9B22 /* SpringTextField.swift in Sources */,
 				9C7E1F2A1BD8B494006B9B22 /* DesignableTextField.swift in Sources */,
 				9C7E1F001BD8B162006B9B22 /* SignUpViewController.swift in Sources */,

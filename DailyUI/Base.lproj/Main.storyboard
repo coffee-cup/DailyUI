@@ -104,7 +104,8 @@
                         <segue destination="8vQ-ds-n0Q" kind="presentation" identifier="SignUpSegue" id="X9y-wp-hO2"/>
                         <segue destination="C7g-gX-Ysc" kind="presentation" identifier="CreditCardSegue" id="vVm-yh-uqz"/>
                         <segue destination="gHE-Fc-sfZ" kind="presentation" identifier="LandingPageSegue" id="VqR-eQ-kqH"/>
-                        <segue destination="M0V-4N-bzN" kind="presentation" identifier="CalculatorSegue" id="QBa-AN-ENn"/>
+                        <segue destination="M0V-4N-bzN" kind="presentation" identifier="CalculatorSegue" modalTransitionStyle="crossDissolve" id="QBa-AN-ENn"/>
+                        <segue destination="mrM-u9-DmO" kind="presentation" identifier="IconSegue" modalTransitionStyle="crossDissolve" id="Fu0-3b-GPB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSU-Pa-shT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1795,6 +1796,65 @@
             </objects>
             <point key="canvasLocation" x="1685.5" y="1004.5"/>
         </scene>
+        <!--App Icon View Controller-->
+        <scene sceneID="OCd-l9-i7D">
+            <objects>
+                <viewController id="mrM-u9-DmO" customClass="AppIconViewController" customModule="DailyUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x6g-sZ-2Gu"/>
+                        <viewControllerLayoutGuide type="bottom" id="jt6-H1-A5u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4U6-EN-VDu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BW8-iR-PXQ">
+                                <rect key="frame" x="56" y="202" width="263" height="263"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="rNH-GZ-74T">
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="263"/>
+                                        <animations/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rNH-GZ-74T" secondAttribute="bottom" id="EnQ-bW-nn2"/>
+                                    <constraint firstItem="rNH-GZ-74T" firstAttribute="top" secondItem="BW8-iR-PXQ" secondAttribute="top" id="aTY-bl-wzb"/>
+                                    <constraint firstAttribute="trailing" secondItem="rNH-GZ-74T" secondAttribute="trailing" id="cQk-If-pC0"/>
+                                    <constraint firstAttribute="width" secondItem="BW8-iR-PXQ" secondAttribute="height" multiplier="1:1" id="pRx-aM-kV9"/>
+                                    <constraint firstItem="rNH-GZ-74T" firstAttribute="leading" secondItem="BW8-iR-PXQ" secondAttribute="leading" id="uOk-5z-gJb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.13333333333333333" green="0.9882352941176471" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BW8-iR-PXQ" secondAttribute="trailing" constant="40" id="Q3h-Oa-XGF"/>
+                            <constraint firstItem="BW8-iR-PXQ" firstAttribute="centerY" secondItem="4U6-EN-VDu" secondAttribute="centerY" id="UV4-bQ-cCH"/>
+                            <constraint firstItem="BW8-iR-PXQ" firstAttribute="leading" secondItem="4U6-EN-VDu" secondAttribute="leadingMargin" constant="40" id="Vm9-AW-S7E"/>
+                            <constraint firstItem="BW8-iR-PXQ" firstAttribute="centerX" secondItem="4U6-EN-VDu" secondAttribute="centerX" id="bEx-Ta-MCu"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6ic-fE-RSe" appends="YES" id="k85-4Q-kIn"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="iconImageView" destination="rNH-GZ-74T" id="UKS-qm-dXB"/>
+                        <outlet property="panGesture" destination="6ic-fE-RSe" id="LUT-Kd-ADg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PjX-tt-Bzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6ic-fE-RSe">
+                    <connections>
+                        <action selector="handleGesture:" destination="mrM-u9-DmO" id="jzv-o3-aib"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2159.5" y="1004.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="yBu-z7-FmG">
             <objects>
@@ -1817,6 +1877,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Icon" width="180" height="180"/>
         <image name="atDark" width="40" height="39"/>
         <image name="backarrow" width="14" height="24"/>
         <image name="card" width="287" height="193"/>
