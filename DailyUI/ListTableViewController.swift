@@ -12,6 +12,9 @@ class ListTableViewController: UITableViewController {
 
     let transitionManager = TransitionManager()
     
+    // do we reverse the list
+    let REVERSE = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,9 +47,16 @@ class ListTableViewController: UITableViewController {
         return 100
     }
     
+    func rowForIndexPath(indexPath: NSIndexPath) -> Int {
+        if REVERSE {
+            return list.count - indexPath.row - 1
+        }
+        return indexPath.row
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DailyCell", forIndexPath: indexPath) as! DailyTableViewCell
-        var daily = list[indexPath.row]
+        var daily = list[rowForIndexPath(indexPath)]
         
         cell.titleLabel.text = daily["title"]
         cell.iconImageView.image = UIImage(named: daily["icon"]!)
@@ -57,7 +67,7 @@ class ListTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let daily = list[indexPath.row]
+        let daily = list[rowForIndexPath(indexPath)]
         let segue = daily["segue"]!
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         performSegueWithIdentifier(segue, sender: cell)
