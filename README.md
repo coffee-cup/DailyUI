@@ -7,6 +7,14 @@ Feel free to download to run the app or view and edit the source.
 ## Screenshots of days
 *newest first*
 
+### 005 App Icon
+
+![app icon](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/AppIcon.png)
+
+### 004 Calculator
+
+### 003 Landing Page
+
 ### 002 Credit Card Checkout
 
 ![credit card checkout](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/CreditCard.gif)
