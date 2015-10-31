@@ -13,6 +13,8 @@ Feel free to download to run the app or view and edit the source.
 
 ### 004 Calculator
 
+![calculator](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/Calculator.gif)
+
 ### 003 Landing Page
 
 ### 002 Credit Card Checkout
