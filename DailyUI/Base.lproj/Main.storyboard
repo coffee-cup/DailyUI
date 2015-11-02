@@ -103,9 +103,9 @@
                     <connections>
                         <segue destination="8vQ-ds-n0Q" kind="presentation" identifier="SignUpSegue" id="X9y-wp-hO2"/>
                         <segue destination="C7g-gX-Ysc" kind="presentation" identifier="CreditCardSegue" id="vVm-yh-uqz"/>
-                        <segue destination="gHE-Fc-sfZ" kind="presentation" identifier="LandingPageSegue" id="VqR-eQ-kqH"/>
                         <segue destination="M0V-4N-bzN" kind="presentation" identifier="CalculatorSegue" modalTransitionStyle="crossDissolve" id="QBa-AN-ENn"/>
                         <segue destination="mrM-u9-DmO" kind="presentation" identifier="IconSegue" modalTransitionStyle="crossDissolve" id="Fu0-3b-GPB"/>
+                        <segue destination="U4N-P8-TWE" kind="presentation" identifier="LandingPageSegue" modalTransitionStyle="crossDissolve" id="obV-fc-9m9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSU-Pa-shT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1017,26 +1017,6 @@
             </objects>
             <point key="canvasLocation" x="860" y="955"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="exa-mw-V94">
-            <objects>
-                <viewController id="gHE-Fc-sfZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="coM-8I-qBH"/>
-                        <viewControllerLayoutGuide type="bottom" id="Evv-kV-9Wd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IpY-Og-x60">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zoJ-At-8DJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1262" y="955"/>
-        </scene>
         <!--Calculator View Controller-->
         <scene sceneID="VuL-gb-z3a">
             <objects>
@@ -1875,9 +1855,70 @@
             </objects>
             <point key="canvasLocation" x="374.5" y="-3.5"/>
         </scene>
+        <!--Landing Page View Controller-->
+        <scene sceneID="LAn-ym-BCT">
+            <objects>
+                <viewController id="U4N-P8-TWE" customClass="LandingPageViewController" customModule="DailyUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eTp-r4-PaA"/>
+                        <viewControllerLayoutGuide type="bottom" id="eXW-FZ-iYl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hvq-OP-doE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-yH-JvK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingBack" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-Dw-eg9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <animations/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="ICd-Dw-eg9" firstAttribute="leading" secondItem="HC7-yH-JvK" secondAttribute="leading" id="676-L9-imi"/>
+                                    <constraint firstItem="ICd-Dw-eg9" firstAttribute="top" secondItem="HC7-yH-JvK" secondAttribute="top" id="Tex-jU-bqj"/>
+                                    <constraint firstAttribute="trailing" secondItem="ICd-Dw-eg9" secondAttribute="trailing" id="VwQ-Dp-q9p"/>
+                                    <constraint firstAttribute="bottom" secondItem="ICd-Dw-eg9" secondAttribute="bottom" id="YmB-ge-4bg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mgF-vD-hbS" customClass="DesignableView" customModule="DailyUI" customModuleProvider="target">
+                                <rect key="frame" x="167" y="314" width="40" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.35134548611111116" green="0.35134548611111116" blue="0.35134548611111116" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eXW-FZ-iYl" firstAttribute="top" secondItem="HC7-yH-JvK" secondAttribute="bottom" id="6sU-za-NUH"/>
+                            <constraint firstItem="HC7-yH-JvK" firstAttribute="top" secondItem="Hvq-OP-doE" secondAttribute="top" id="cIl-Vb-wEB"/>
+                            <constraint firstItem="HC7-yH-JvK" firstAttribute="leading" secondItem="Hvq-OP-doE" secondAttribute="leading" id="f1r-Sl-okH"/>
+                            <constraint firstAttribute="trailing" secondItem="HC7-yH-JvK" secondAttribute="trailing" id="mRo-Vy-Lsw"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="exitView" destination="mgF-vD-hbS" id="pcq-yI-W7t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evJ-Ft-CnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256.5" y="1004.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Icon" width="180" height="180"/>
+        <image name="LandingBack" width="375" height="667"/>
         <image name="atDark" width="40" height="39"/>
         <image name="backarrow" width="14" height="24"/>
         <image name="card" width="287" height="193"/>

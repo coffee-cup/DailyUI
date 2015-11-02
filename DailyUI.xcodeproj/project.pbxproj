@@ -60,6 +60,9 @@
 		9C7E1F3D1BD8B494006B9B22 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E1F201BD8B494006B9B22 /* TransitionZoom.swift */; };
 		9C7E1F3E1BD8B494006B9B22 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E1F211BD8B494006B9B22 /* UnwindSegue.swift */; };
 		9CE1DFA81BE54AD800A8B0A3 /* AppIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE1DFA71BE54AD800A8B0A3 /* AppIconViewController.swift */; };
+		9CFD12B11BE734CF008EE601 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD12B01BE734CF008EE601 /* PlayfairDisplay-Bold.ttf */; };
+		9CFD12B31BE73912008EE601 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD12B21BE73912008EE601 /* LandingPageViewController.swift */; };
+		9CFD12B51BE73A42008EE601 /* AvenirNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD12B41BE73A42008EE601 /* AvenirNextLTPro-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +147,9 @@
 		9C7E1F201BD8B494006B9B22 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		9C7E1F211BD8B494006B9B22 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		9CE1DFA71BE54AD800A8B0A3 /* AppIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconViewController.swift; sourceTree = "<group>"; };
+		9CFD12B01BE734CF008EE601 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		9CFD12B21BE73912008EE601 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		9CFD12B41BE73A42008EE601 /* AvenirNextLTPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,7 @@
 				9C2A0A381BDB2C450084D180 /* CreditCardViewController.swift */,
 				9C2C694B1BE0ABF30023E756 /* CalculatorViewController.swift */,
 				9CE1DFA71BE54AD800A8B0A3 /* AppIconViewController.swift */,
+				9CFD12B21BE73912008EE601 /* LandingPageViewController.swift */,
 			);
 			path = DailyUI;
 			sourceTree = "<group>";
@@ -268,6 +275,8 @@
 		9C7E1EFD1BD8AD3C006B9B22 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				9CFD12B41BE73A42008EE601 /* AvenirNextLTPro-Regular.otf */,
+				9CFD12B01BE734CF008EE601 /* PlayfairDisplay-Bold.ttf */,
 				9C2C69491BE0A9DC0023E756 /* UbuntuMono-R.ttf */,
 				9C62AF141BDC477C00E77493 /* OCRAStd.otf */,
 				9C1E401D1BDB387E00D7A26F /* HelveticaNeue.dfont */,
@@ -424,8 +433,10 @@
 				9C62AF151BDC477C00E77493 /* OCRAStd.otf in Resources */,
 				9C7E1F311BD8B494006B9B22 /* LoadingView.xib in Resources */,
 				9C7E1F2E1BD8B494006B9B22 /* Info.plist in Resources */,
+				9CFD12B51BE73A42008EE601 /* AvenirNextLTPro-Regular.otf in Resources */,
 				9C1E401E1BDB387E00D7A26F /* HelveticaNeue.dfont in Resources */,
 				9C2C694E1BE1C4010023E756 /* Assets.xcassets in Resources */,
+				9CFD12B11BE734CF008EE601 /* PlayfairDisplay-Bold.ttf in Resources */,
 				9C7E1EBB1BD735BB006B9B22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +491,7 @@
 				9C7E1F341BD8B494006B9B22 /* Spring.swift in Sources */,
 				9C7E1F3B1BD8B494006B9B22 /* SpringView.swift in Sources */,
 				9C7E1EB81BD735BB006B9B22 /* ViewController.swift in Sources */,
+				9CFD12B31BE73912008EE601 /* LandingPageViewController.swift in Sources */,
 				9C2A0A391BDB2C450084D180 /* CreditCardViewController.swift in Sources */,
 				9C7E1F281BD8B494006B9B22 /* DesignableLabel.swift in Sources */,
 				9C7E1F3D1BD8B494006B9B22 /* TransitionZoom.swift in Sources */,
