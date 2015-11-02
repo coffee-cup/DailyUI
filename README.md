@@ -17,6 +17,8 @@ Feel free to download to run the app or view and edit the source.
 
 ### 003 Landing Page
 
+![landing page](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/LandingPage.png)
+
 ### 002 Credit Card Checkout
 
 ![credit card checkout](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/CreditCard.gif)
