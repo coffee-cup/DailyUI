@@ -9,7 +9,7 @@ Feel free to download to run the app or view and edit the source.
 
 ### 006 User Profile
 
-![user profile](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/Profile.png)
+![user profile](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/UserProfile.png)
 
 ### 005 App Icon
 
