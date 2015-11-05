@@ -1959,8 +1959,8 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="nIh-3F-abz"/>
                                         <exclude reference="66q-cK-JNu"/>
+                                        <exclude reference="nIh-3F-abz"/>
                                     </mask>
                                 </variation>
                             </label>
