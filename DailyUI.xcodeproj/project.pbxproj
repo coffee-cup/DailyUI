@@ -59,6 +59,9 @@
 		9C7E1F3C1BD8B494006B9B22 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E1F1F1BD8B494006B9B22 /* TransitionManager.swift */; };
 		9C7E1F3D1BD8B494006B9B22 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E1F201BD8B494006B9B22 /* TransitionZoom.swift */; };
 		9C7E1F3E1BD8B494006B9B22 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E1F211BD8B494006B9B22 /* UnwindSegue.swift */; };
+		9C85EE341BEB206F00B0CD51 /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C85EE331BEB206F00B0CD51 /* Lora-Regular.ttf */; };
+		9C85EE361BEB42F900B0CD51 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C85EE351BEB42F900B0CD51 /* StoryTableViewCell.swift */; };
+		9C9E97721BEB13CD007448E1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E97711BEB13CD007448E1 /* ProfileViewController.swift */; };
 		9CE1DFA81BE54AD800A8B0A3 /* AppIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE1DFA71BE54AD800A8B0A3 /* AppIconViewController.swift */; };
 		9CFD12B11BE734CF008EE601 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD12B01BE734CF008EE601 /* PlayfairDisplay-Bold.ttf */; };
 		9CFD12B31BE73912008EE601 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD12B21BE73912008EE601 /* LandingPageViewController.swift */; };
@@ -146,6 +149,9 @@
 		9C7E1F1F1BD8B494006B9B22 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		9C7E1F201BD8B494006B9B22 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		9C7E1F211BD8B494006B9B22 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		9C85EE331BEB206F00B0CD51 /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
+		9C85EE351BEB42F900B0CD51 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		9C9E97711BEB13CD007448E1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9CE1DFA71BE54AD800A8B0A3 /* AppIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconViewController.swift; sourceTree = "<group>"; };
 		9CFD12B01BE734CF008EE601 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		9CFD12B21BE73912008EE601 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +241,8 @@
 				9C2C694B1BE0ABF30023E756 /* CalculatorViewController.swift */,
 				9CE1DFA71BE54AD800A8B0A3 /* AppIconViewController.swift */,
 				9CFD12B21BE73912008EE601 /* LandingPageViewController.swift */,
+				9C9E97711BEB13CD007448E1 /* ProfileViewController.swift */,
+				9C85EE351BEB42F900B0CD51 /* StoryTableViewCell.swift */,
 			);
 			path = DailyUI;
 			sourceTree = "<group>";
@@ -275,6 +283,7 @@
 		9C7E1EFD1BD8AD3C006B9B22 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				9C85EE331BEB206F00B0CD51 /* Lora-Regular.ttf */,
 				9CFD12B41BE73A42008EE601 /* AvenirNextLTPro-Regular.otf */,
 				9CFD12B01BE734CF008EE601 /* PlayfairDisplay-Bold.ttf */,
 				9C2C69491BE0A9DC0023E756 /* UbuntuMono-R.ttf */,
@@ -428,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C7E1F021BD8B27E006B9B22 /* PlayfairDisplay-Regular.ttf in Resources */,
+				9C85EE341BEB206F00B0CD51 /* Lora-Regular.ttf in Resources */,
 				9C7E1EC01BD735BB006B9B22 /* LaunchScreen.storyboard in Resources */,
 				9C2C694A1BE0A9DC0023E756 /* UbuntuMono-R.ttf in Resources */,
 				9C62AF151BDC477C00E77493 /* OCRAStd.otf in Resources */,
@@ -468,6 +478,7 @@
 				9C7E1F251BD8B494006B9B22 /* BlurView.swift in Sources */,
 				9C7E1EF81BD8A8AD006B9B22 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				9C7E1EF91BD8A8AD006B9B22 /* TPKeyboardAvoidingTableView.m in Sources */,
+				9C9E97721BEB13CD007448E1 /* ProfileViewController.swift in Sources */,
 				9C7E1F3A1BD8B494006B9B22 /* SpringTextView.swift in Sources */,
 				9C7E1F301BD8B494006B9B22 /* LoadingView.swift in Sources */,
 				9C7E1F3E1BD8B494006B9B22 /* UnwindSegue.swift in Sources */,
@@ -490,6 +501,7 @@
 				9C7E1EE61BD767CD006B9B22 /* List.swift in Sources */,
 				9C7E1F341BD8B494006B9B22 /* Spring.swift in Sources */,
 				9C7E1F3B1BD8B494006B9B22 /* SpringView.swift in Sources */,
+				9C85EE361BEB42F900B0CD51 /* StoryTableViewCell.swift in Sources */,
 				9C7E1EB81BD735BB006B9B22 /* ViewController.swift in Sources */,
 				9CFD12B31BE73912008EE601 /* LandingPageViewController.swift in Sources */,
 				9C2A0A391BDB2C450084D180 /* CreditCardViewController.swift in Sources */,
