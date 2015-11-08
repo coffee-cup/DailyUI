@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0637271BEC8547003F4255 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0637251BEC8547003F4255 /* OpenSans-Light.ttf */; };
+		9C0637281BEC8547003F4255 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0637261BEC8547003F4255 /* OpenSans-Semibold.ttf */; };
+		9C06372A1BEC8898003F4255 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0637291BEC8898003F4255 /* SettingsViewController.swift */; };
+		9C06372C1BEEBD40003F4255 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C06372B1BEEBD40003F4255 /* OpenSans-Regular.ttf */; };
+		9C06372E1BEF03F8003F4255 /* ColourPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06372D1BEF03F8003F4255 /* ColourPickerViewController.swift */; };
 		9C1B0FCF1BE1CC3C00318CCC /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B0FCE1BE1CC3C00318CCC /* ZFRippleButton.swift */; };
 		9C1E401E1BDB387E00D7A26F /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 9C1E401D1BDB387E00D7A26F /* HelveticaNeue.dfont */; };
 		9C2A0A391BDB2C450084D180 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A0A381BDB2C450084D180 /* CreditCardViewController.swift */; };
@@ -86,6 +91,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C0637251BEC8547003F4255 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		9C0637261BEC8547003F4255 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		9C0637291BEC8898003F4255 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9C06372B1BEEBD40003F4255 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		9C06372D1BEF03F8003F4255 /* ColourPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourPickerViewController.swift; sourceTree = "<group>"; };
 		9C1B0FCE1BE1CC3C00318CCC /* ZFRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFRippleButton.swift; sourceTree = "<group>"; };
 		9C1E401D1BDB387E00D7A26F /* HelveticaNeue.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.dfont; sourceTree = "<group>"; };
 		9C2A0A381BDB2C450084D180 /* CreditCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +253,8 @@
 				9CFD12B21BE73912008EE601 /* LandingPageViewController.swift */,
 				9C9E97711BEB13CD007448E1 /* ProfileViewController.swift */,
 				9C85EE351BEB42F900B0CD51 /* StoryTableViewCell.swift */,
+				9C0637291BEC8898003F4255 /* SettingsViewController.swift */,
+				9C06372D1BEF03F8003F4255 /* ColourPickerViewController.swift */,
 			);
 			path = DailyUI;
 			sourceTree = "<group>";
@@ -283,6 +295,9 @@
 		9C7E1EFD1BD8AD3C006B9B22 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				9C06372B1BEEBD40003F4255 /* OpenSans-Regular.ttf */,
+				9C0637251BEC8547003F4255 /* OpenSans-Light.ttf */,
+				9C0637261BEC8547003F4255 /* OpenSans-Semibold.ttf */,
 				9C85EE331BEB206F00B0CD51 /* Lora-Regular.ttf */,
 				9CFD12B41BE73A42008EE601 /* AvenirNextLTPro-Regular.otf */,
 				9CFD12B01BE734CF008EE601 /* PlayfairDisplay-Bold.ttf */,
@@ -436,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0637271BEC8547003F4255 /* OpenSans-Light.ttf in Resources */,
 				9C7E1F021BD8B27E006B9B22 /* PlayfairDisplay-Regular.ttf in Resources */,
 				9C85EE341BEB206F00B0CD51 /* Lora-Regular.ttf in Resources */,
 				9C7E1EC01BD735BB006B9B22 /* LaunchScreen.storyboard in Resources */,
@@ -445,8 +461,10 @@
 				9C7E1F2E1BD8B494006B9B22 /* Info.plist in Resources */,
 				9CFD12B51BE73A42008EE601 /* AvenirNextLTPro-Regular.otf in Resources */,
 				9C1E401E1BDB387E00D7A26F /* HelveticaNeue.dfont in Resources */,
+				9C06372C1BEEBD40003F4255 /* OpenSans-Regular.ttf in Resources */,
 				9C2C694E1BE1C4010023E756 /* Assets.xcassets in Resources */,
 				9CFD12B11BE734CF008EE601 /* PlayfairDisplay-Bold.ttf in Resources */,
+				9C0637281BEC8547003F4255 /* OpenSans-Semibold.ttf in Resources */,
 				9C7E1EBB1BD735BB006B9B22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +505,7 @@
 				9C7E1F241BD8B494006B9B22 /* AutoTextView.swift in Sources */,
 				9C7E1F321BD8B494006B9B22 /* Misc.swift in Sources */,
 				9C7E1EEA1BD77A88006B9B22 /* DailyTableViewCell.swift in Sources */,
+				9C06372A1BEC8898003F4255 /* SettingsViewController.swift in Sources */,
 				9C7E1F351BD8B494006B9B22 /* SpringAnimation.swift in Sources */,
 				9CE1DFA81BE54AD800A8B0A3 /* AppIconViewController.swift in Sources */,
 				9C7E1F391BD8B494006B9B22 /* SpringTextField.swift in Sources */,
@@ -495,6 +514,7 @@
 				9C7E1F3C1BD8B494006B9B22 /* TransitionManager.swift in Sources */,
 				9C7E1F261BD8B494006B9B22 /* DesignableButton.swift in Sources */,
 				9C7E1F381BD8B494006B9B22 /* SpringLabel.swift in Sources */,
+				9C06372E1BEF03F8003F4255 /* ColourPickerViewController.swift in Sources */,
 				9C7E1F2C1BD8B494006B9B22 /* DesignableView.swift in Sources */,
 				9C7E1EFA1BD8A8AD006B9B22 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				9C7E1F371BD8B494006B9B22 /* SpringImageView.swift in Sources */,

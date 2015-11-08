@@ -38,6 +38,11 @@ let list = [
         "title": "User Profile",
         "icon": "userprofile",
         "segue": "ProfileSegue"
+    ],
+    [
+        "title": "Settings",
+        "icon": "settings",
+        "segue": "SettingsSegue"
     ]
 ]
 
