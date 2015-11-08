@@ -7,6 +7,10 @@ Feel free to download to run the app or view and edit the source.
 ## Screenshots of days
 *newest first*
 
+### 007 Settings
+
+![settings](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/Settings.png)
+
 ### 006 User Profile
 
 ![user profile](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/UserProfile.png)
