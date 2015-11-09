@@ -223,7 +223,7 @@ class SettingsViewController: UIViewController, ColourPickerDelegate {
         let curve = "easeOut"
         let damping = CGFloat(0.8)
         
-        connectionImageButton.setBackgroundImage(UIImage("connection_filled"), forState: UIControlState.Normal)
+        connectionImageButton.setBackgroundImage(UIImage(name: "connection_filled"), forState: UIControlState.Normal)
         
         soundcloudButton.animation = animation
         soundcloudButton.curve = curve
