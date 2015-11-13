@@ -18,6 +18,7 @@
 		9C2C694A1BE0A9DC0023E756 /* UbuntuMono-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C69491BE0A9DC0023E756 /* UbuntuMono-R.ttf */; };
 		9C2C694C1BE0ABF30023E756 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C694B1BE0ABF30023E756 /* CalculatorViewController.swift */; };
 		9C2C694E1BE1C4010023E756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2C694D1BE1C4010023E756 /* Assets.xcassets */; };
+		9C32ED8A1BF597EA0004D5F1 /* NotFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32ED891BF597EA0004D5F1 /* NotFoundViewController.swift */; };
 		9C54107D1BDB47EA0052024B /* Sweetercolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54107C1BDB47EA0052024B /* Sweetercolor.swift */; };
 		9C62AF151BDC477C00E77493 /* OCRAStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C62AF141BDC477C00E77493 /* OCRAStd.otf */; };
 		9C7E1EB61BD735BB006B9B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E1EB51BD735BB006B9B22 /* AppDelegate.swift */; };
@@ -102,6 +103,7 @@
 		9C2C69491BE0A9DC0023E756 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-R.ttf"; sourceTree = "<group>"; };
 		9C2C694B1BE0ABF30023E756 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		9C2C694D1BE1C4010023E756 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C32ED891BF597EA0004D5F1 /* NotFoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotFoundViewController.swift; sourceTree = "<group>"; };
 		9C54107C1BDB47EA0052024B /* Sweetercolor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sweetercolor.swift; sourceTree = "<group>"; };
 		9C62AF141BDC477C00E77493 /* OCRAStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRAStd.otf; sourceTree = "<group>"; };
 		9C7E1EB21BD735BB006B9B22 /* DailyUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -255,6 +257,7 @@
 				9C85EE351BEB42F900B0CD51 /* StoryTableViewCell.swift */,
 				9C0637291BEC8898003F4255 /* SettingsViewController.swift */,
 				9C06372D1BEF03F8003F4255 /* ColourPickerViewController.swift */,
+				9C32ED891BF597EA0004D5F1 /* NotFoundViewController.swift */,
 			);
 			path = DailyUI;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				9C7E1EB81BD735BB006B9B22 /* ViewController.swift in Sources */,
 				9CFD12B31BE73912008EE601 /* LandingPageViewController.swift in Sources */,
 				9C2A0A391BDB2C450084D180 /* CreditCardViewController.swift in Sources */,
+				9C32ED8A1BF597EA0004D5F1 /* NotFoundViewController.swift in Sources */,
 				9C7E1F281BD8B494006B9B22 /* DesignableLabel.swift in Sources */,
 				9C7E1F3D1BD8B494006B9B22 /* TransitionZoom.swift in Sources */,
 				9C7E1F2D1BD8B494006B9B22 /* ImageLoader.swift in Sources */,

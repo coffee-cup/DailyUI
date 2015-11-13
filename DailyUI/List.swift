@@ -43,6 +43,11 @@ let list = [
         "title": "Settings",
         "icon": "settings",
         "segue": "SettingsSegue"
+    ],
+    [
+        "title": "404 Page",
+        "icon": "notfound",
+        "segue": "NotFoundSegue"
     ]
 ]
 
