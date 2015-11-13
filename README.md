@@ -7,6 +7,10 @@ Feel free to download to run the app or view and edit the source.
 ## Screenshots of days
 *newest first*
 
+### 008 404 Page
+
+![404 page](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/NotFoundPage.png)
+
 ### 007 Settings
 
 ![settings](https://raw.githubusercontent.com/coffee-cup/DailyUI/master/Shreenshots/Settings.png)
